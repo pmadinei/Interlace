@@ -1,6 +1,5 @@
 # INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models
 
-[![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue)](https://cvpr.thecvf.com/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](link-to-arxiv)
 
 Official implementation of "INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models" (CVPR 2026).
