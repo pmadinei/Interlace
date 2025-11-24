@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](link-to-arxiv)
 
-Official implementation of "INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models" (CVPR 2026).
+Official implementation of "INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models".
 
 ## Overview
 
