@@ -1,9 +1,13 @@
-# INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models
+# ✂️ INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models
 
 <p align="center">
-  <a href="https://pmadinei.github.io/Interlace"><b>Project Page</b></a> &nbsp;|&nbsp;
-  <a href="https://arxiv.org/abs/2511.19676"><b>Paper</b></a> &nbsp;|&nbsp;
-  <a href="https://huggingface.co/collections/pmadinei/interlace"><b>Models</b></a>
+  <a href="https://arxiv.org/abs/2511.19676"><img src="https://img.shields.io/badge/arXiv-2511.19676-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://pmadinei.github.io/Interlace"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
+  <a href="https://huggingface.co/collections/pmadinei/interlace-69dead3ef6ff07d0dededebc"><img src="https://img.shields.io/badge/🤗_HuggingFace-Models-yellow" alt="HuggingFace"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/CVPR-2026-purple" alt="CVPR 2026">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-2.1+-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch">
 </p>
 
 <p align="center">
@@ -13,7 +17,7 @@
 
 > **INTERLACE** is a novel framework that prunes redundant layers in Vision-Language Models (VLMs) while maintaining performance through sample-efficient finetuning. By analyzing triplets of consecutive layers to identify local redundancy, INTERLACE achieves **88.9% average performance retention** after dropping **25% of layers**, outperforming alternative pruning methods by **28.4%**.
 
-## Key Results
+## 📊 Key Results
 
 | Method | Sparsity | Fine-Tune | TTFT Speedup | Avg Performance | Relative Perf. |
 |--------|----------|-----------|-------------|-----------------|----------------|
@@ -24,7 +28,7 @@
 | SLEB-FT | 25% | Yes | 1.12x | 46.0% | 57.1% |
 | **INTERLACE (Ours)** | **25%** | **Yes** | **1.18x** | **71.6%** | **88.9%** |
 
-## Method Overview
+## 🔬 Method Overview
 
 INTERLACE operates in three stages:
 
@@ -36,7 +40,7 @@ INTERLACE operates in three stages:
   <img src="assets/interlace_overview.png" alt="INTERLACE Overview" width="800"/>
 </p>
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 INTERLACE/
@@ -70,7 +74,7 @@ INTERLACE/
     └── index.html                   # Project webpage (GitHub Pages)
 ```
 
-## Installation
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/pmadinei/Interlace.git
@@ -84,7 +88,7 @@ pip install -r requirements.txt
 - CUDA >= 12.1
 - GPU with >= 48GB VRAM (80GB+ recommended for 8B models)
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Step 1: Prepare the Dataset
 
@@ -162,7 +166,7 @@ python -m vlmeval.run --model Interlace-8B-25pc \
     HRBench4K HRBench8K VStar MIABench ScienceQA_TEST
 ```
 
-## Pruning Strategies
+## 🧪 Pruning Strategies
 
 The unified training script supports multiple layer selection strategies via `--pruning_strategy`:
 
@@ -174,9 +178,9 @@ The unified training script supports multiple layer selection strategies via `--
 | `random` | **Random** — Randomly selects layers to drop and fine-tune |
 | `consecutive` | **Consecutive** — Drops a contiguous block of the most redundant layers |
 
-## Pretrained Models
+## 🤗 Pretrained Models
 
-All INTERLACE pruned models are available on HuggingFace:
+All INTERLACE pruned models are available on [🤗 HuggingFace](https://huggingface.co/collections/pmadinei/interlace-69dead3ef6ff07d0dededebc):
 
 | Model | Drop Ratio | Avg Relative Perf. | Link |
 |-------|-----------|--------------------|----|
@@ -189,7 +193,7 @@ All INTERLACE pruned models are available on HuggingFace:
 | Interlace-Qwen3-VL-4B-20pc | 20% | 88.0% | [HuggingFace](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-4B-20pc) |
 | Interlace-Qwen3-VL-4B-25pc | 25% | 81.7% | [HuggingFace](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-4B-25pc) |
 
-## Training Hyperparameters
+## 🛠️ Training Hyperparameters
 
 | Parameter | Value |
 |-----------|-------|
@@ -204,10 +208,10 @@ All INTERLACE pruned models are available on HuggingFace:
 | DeepSpeed | ZeRO Stage 3 |
 | Training Data | 1% of FineVision (~240K samples) |
 
-## Citation
+## 📝 Citation
 
 ```bibtex
-@inproceedings{madinei2025interlace,
+@inproceedings{madinei2026interlace,
   title={INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models},
   author={Madinei, Parsa and Solgi, Ryan and Wen, Ziqi and Skaza, Jonathan and Eckstein, Miguel and Pedarsani, Ramtin},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -215,10 +219,10 @@ All INTERLACE pruned models are available on HuggingFace:
 }
 ```
 
-## Acknowledgment
+## 🙏 Acknowledgment
 
 This study was supported by the Institute for Collaborative Biotechnologies (ICB) cooperative agreement W911NF-19-2-0026. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies of the US Government.
 
-## License
+## 📄 License
 
 This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
