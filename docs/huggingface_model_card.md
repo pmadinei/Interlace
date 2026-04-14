@@ -15,7 +15,7 @@ pipeline_tag: image-text-to-text
 
 # INTERLACE: Qwen3-VL-8B with 25% Layer Pruning
 
-This model was pruned using **INTERLACE** ([paper](https://arxiv.org/abs/XXXX.XXXXX) | [code](https://github.com/pmadinei/Interlace)), a novel framework for efficient layer pruning in Vision-Language Models. It retains **86.1%** of the baseline model's performance while providing **1.18x** Time-To-First-Token speedup.
+This model was pruned using **INTERLACE** ([paper](https://arxiv.org/abs/2511.19676) | [code](https://github.com/pmadinei/Interlace)), a novel framework for efficient layer pruning in Vision-Language Models. It retains **86.1%** of the baseline model's performance while providing **1.18x** Time-To-First-Token speedup.
 
 ## Model Details
 
@@ -88,7 +88,7 @@ print(processor.decode(output[0], skip_special_tokens=True))
 | [Interlace-Qwen3-VL-8B-10pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-8B-10pc) | 10% | 94.0% |
 | [Interlace-Qwen3-VL-8B-15pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-8B-15pc) | 15% | 92.1% |
 | [Interlace-Qwen3-VL-8B-20pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-8B-20pc) | 20% | 86.9% |
-| **Interlace-Qwen3-VL-8B-25pc** | **25%** | **86.1%** |
+| [Interlace-Qwen3-VL-8B-25pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-8B-25pc) | 25% | 86.1% |
 | [Interlace-Qwen3-VL-4B-10pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-4B-10pc) | 10% | 93.9% |
 | [Interlace-Qwen3-VL-4B-15pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-4B-15pc) | 15% | 91.9% |
 | [Interlace-Qwen3-VL-4B-20pc](https://huggingface.co/pmadinei/Interlace-Qwen3-VL-4B-20pc) | 20% | 88.0% |
