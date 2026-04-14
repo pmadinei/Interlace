@@ -6,7 +6,7 @@ tags:
   - layer-pruning
   - qwen3-vl
   - interlace
-  - cvpr2025
+  - cvpr2026
 datasets:
   - HuggingFaceM4/FineVision
 base_model: Qwen/Qwen3-VL-8B-Instruct
@@ -97,10 +97,10 @@ print(processor.decode(output[0], skip_special_tokens=True))
 ## Citation
 
 ```bibtex
-@inproceedings{madinei2025interlace,
+@inproceedings{madinei2026interlace,
   title={INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models},
   author={Madinei, Parsa and Solgi, Ryan and Wen, Ziqi and Skaza, Jonathan and Eckstein, Miguel and Pedarsani, Ramtin},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025}
+  year={2026}
 }
 ```
