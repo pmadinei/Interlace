@@ -4,8 +4,9 @@
   <a href="https://arxiv.org/abs/2511.19676"><img src="https://img.shields.io/badge/arXiv-2511.19676-b31b1b.svg" alt="arXiv"></a>
   <a href="https://pmadinei.github.io/Interlace"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
   <a href="https://huggingface.co/collections/pmadinei/interlace-69dead3ef6ff07d0dededebc"><img src="https://img.shields.io/badge/🤗_HuggingFace-Models-yellow" alt="HuggingFace"></a>
+  <a href="https://github.com/pmadinei/Interlace/blob/main/Poster%20(CVPRF2026).png"><img src="https://img.shields.io/badge/🖼️_Poster-orange" alt="Poster"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="License"></a>
-  <img src="https://img.shields.io/badge/CVPR-2026-purple" alt="CVPR 2026">
+  <img src="https://img.shields.io/badge/CVPR-2026-purple" alt="CVPRF 2026">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/PyTorch-2.1+-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch">
 </p>
@@ -214,7 +215,7 @@ All INTERLACE pruned models are available on [🤗 HuggingFace](https://huggingf
 @inproceedings{madinei2026interlace,
   title={INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models},
   author={Madinei, Parsa and Solgi, Ryan and Wen, Ziqi and Skaza, Jonathan and Eckstein, Miguel and Pedarsani, Ramtin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPRF)},
   year={2026}
 }
 ```
