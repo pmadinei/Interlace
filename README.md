@@ -1,7 +1,7 @@
 # ✂️ INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2511.19676"><img src="https://img.shields.io/badge/arXiv-2511.19676-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Madinei_INTERLACE_Interleaved_Layer_Pruning_and_Efficient_Adaptation_in_Large_Vision-Language_CVPRF_2026_paper.html"><img src="https://img.shields.io/badge/Paper-CVF-b31b1b.svg" alt="Paper"></a>
   <a href="https://pmadinei.github.io/Interlace"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
   <a href="https://huggingface.co/collections/pmadinei/interlace-69dead3ef6ff07d0dededebc"><img src="https://img.shields.io/badge/🤗_HuggingFace-Models-yellow" alt="HuggingFace"></a>
   <a href="https://github.com/pmadinei/Interlace/blob/main/Poster%20(CVPRF2026).png"><img src="https://img.shields.io/badge/🖼️_Poster-orange" alt="Poster"></a>
@@ -213,9 +213,10 @@ All INTERLACE pruned models are available on [🤗 HuggingFace](https://huggingf
 
 ```bibtex
 @inproceedings{madinei2026interlace,
-  title={INTERLACE: Interleaved Layer Pruning and Efficient Adaptation in Large Vision-Language Models},
+  title={Interlace: Interleaved layer pruning and efficient adaptation in large vision-language models},
   author={Madinei, Parsa and Solgi, Ryan and Wen, Ziqi and Skaza, Jonathan and Eckstein, Miguel and Pedarsani, Ramtin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPRF)},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2947--2956},
   year={2026}
 }
 ```
